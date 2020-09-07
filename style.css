@@ -1,0 +1,86 @@
+body {
+    
+    margin: 0px;
+    padding: 0px;
+
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.box {
+    box-sizing: border-box;
+    width: 500px;
+    padding: 20px;
+}
+
+
+
+
+
+.f1 {
+    background-color: purple;
+    
+}
+
+.f2 {
+    background-color: blueviolet;
+}
+
+.f3 {
+    background-color: blue;
+}
+
+.f4 {
+    background-color: green;
+}
+
+.f5 {
+    background-color: yellow;
+}
+.f6 {
+    background-color: orange;
+
+}
+
+.f7 {
+    background-color: red;
+}
+/*Mobile Version*/
+@media screen and (max-width: 600px) {
+
+.box {
+    flex-basis: 100%;
+}
+
+}
+
+
+/*Tablet*/
+@media screen and (min-width:601px) and (max-width:800px){
+    .f1, .f2, .f6, .f7 {
+        flex-basis: 100%;
+    
+    }
+
+
+.f3, .f4, .f5  {
+    flex-basis:33.3%;
+} 
+
+}
+
+/*Desktop*/
+@media screen and (min-width:801px) {
+    .f1, .f2, .f6, .f7 {
+        flex-basis: 50%;
+    
+    }
+    .f3, .f5, .f4 {
+        flex-basis: 33.3%;
+    }
+
+
+}
